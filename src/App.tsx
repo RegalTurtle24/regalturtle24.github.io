@@ -1,7 +1,7 @@
 import Alert from "./components/Alert";
 import ListGroup from "./components/ListGroup";
-import NavBar from "./components/NavBar";
 import "bootstrap/dist/css/bootstrap.min.css";
+import PageWithNavBar from "./components/PageWithNavBar";
 
 function App() {
   let items = [
@@ -23,12 +23,13 @@ function App() {
 
   return (
     <div>
-      <NavBar />
-      <ListGroup
-        items={items}
-        heading="Magic Stats"
-        onSelectItem={handleSelectItem}
-      />
+      <PageWithNavBar>
+        <ListGroup
+          items={items}
+          heading="Magic Stats"
+          onSelectItem={handleSelectItem}
+        />
+      </PageWithNavBar>
     </div>
   );
 }

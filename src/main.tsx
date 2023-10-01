@@ -1,21 +1,19 @@
-import React from "react";
+// import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 import Alert from "./components/Alert";
+import Home from "./pages/Home";
+import MagicStats from "./pages/MagicStats";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Home />,
   },
   {
     path: "/mtg-stats",
-    element: <App />,
-  },
-  {
-    path: "/egg",
-    element: <div>Hello world</div>,
+    element: <MagicStats />,
   },
 ]);
 
