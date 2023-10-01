@@ -11,7 +11,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/mtg-stats",
-    element: <Alert />,
+    element: <App />,
   },
 ]);
 
