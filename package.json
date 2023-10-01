@@ -2,10 +2,10 @@
   "name": "my-website",
   "version": "0.0.1",
   "type": "module",
-  "homepage": "https://regalturtle24.github.io/react-gh-pages",
+  "homepage": "https://regalturtle24.github.io/my-website",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
