@@ -13,6 +13,10 @@ const router = createBrowserRouter([
     path: "/mtg-stats",
     element: <App />,
   },
+  {
+    path: "/egg",
+    element: <div>Hello world</div>,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
