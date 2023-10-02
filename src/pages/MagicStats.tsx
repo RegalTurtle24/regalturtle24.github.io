@@ -10,4 +10,7 @@ function MagicStats() {
   );
 }
 
+// Useful for forms
+// https://getbootstrap.com/docs/5.3/forms/validation/?
+
 export default MagicStats;
