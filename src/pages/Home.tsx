@@ -9,6 +9,7 @@ function Home() {
       style={{
         backgroundColor: "rgba(200, 200, 200, 1)",
         height: "100%",
+        minHeight: "100vh",
       }}
     >
       <PageWithNavBar>
