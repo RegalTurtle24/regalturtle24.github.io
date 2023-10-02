@@ -2,6 +2,11 @@ import React from "react";
 import PageWithNavBar from "../components/PageWithNavBar";
 import Alert from "../components/Alert";
 import { Container, Row } from "react-bootstrap";
+import DiscordPhoto from "../assets/images/discord.png";
+import GitHubPhoto from "../assets/images/github.png";
+import GmailPhoto from "../assets/images/gmail.png";
+import LinkedInPhoto from "../assets/images/linkedin.png";
+import PhonePhoto from "../assets/images/phone.png";
 
 function Home() {
   return (
@@ -68,6 +73,11 @@ function Home() {
               Gathering, and the other portion of the website will host a place
               to track statistics of my games.
             </p>
+            <p style={{ paddingLeft: "1rem", fontSize: "1.1rem" }}>
+              I am proficient in Java and Python, and am learning or have worked
+              in C, C++, C#, JavaScript, Scheme, TypeScript, and Assembly. I
+              have also used HTML, CSS, React, and LaTeX.
+            </p>
           </div>
 
           <div style={{ padding: "1rem" }} />
@@ -88,7 +98,7 @@ function Home() {
                 <div className="col my-auto">
                   <a href="https://github.com/RegalTurtle24">
                     <img
-                      src="src\assets\images\github.png"
+                      src={GitHubPhoto}
                       style={{
                         height: "4rem",
                         width: "4rem",
@@ -99,7 +109,7 @@ function Home() {
 
                 <div className="col my-auto">
                   <img
-                    src="src\assets\images\discord.png"
+                    src={DiscordPhoto}
                     style={{
                       height: "2rem",
                       width: "10.545rem",
@@ -109,7 +119,7 @@ function Home() {
 
                 <div className="col my-auto">
                   <img
-                    src="src\assets\images\gmail.png"
+                    src={GmailPhoto}
                     style={{
                       height: "4rem",
                       width: "5.375rem",
@@ -120,7 +130,7 @@ function Home() {
                 <div className="col my-auto">
                   <a href="https://www.linkedin.com/in/thys-vanderschoot-900559220">
                     <img
-                      src="src\assets\images\linkedin.png"
+                      src={LinkedInPhoto}
                       style={{
                         height: "4rem",
                         width: "4rem",
@@ -131,7 +141,7 @@ function Home() {
 
                 <div className="col my-auto">
                   <img
-                    src="src\assets\images\phone.png"
+                    src={PhonePhoto}
                     style={{
                       height: "4rem",
                       width: "4rem",
