@@ -95,7 +95,7 @@ function Home() {
 
             <div className="container text-center">
               <div className="row">
-                <div className="col my-auto">
+                <div className="col">
                   <a href="https://github.com/RegalTurtle24">
                     <img
                       src={GitHubPhoto}
@@ -105,19 +105,30 @@ function Home() {
                       }}
                     ></img>
                   </a>
+                  <div style={{ height: "1rem" }}></div>
+                  <div>RegalTurtle24</div>
+                  <div style={{ height: "1rem" }}></div>
+                  <div>https://github.com/RegalTurtle24</div>
+                  <div style={{ height: "1rem" }}></div>
                 </div>
-
-                <div className="col my-auto">
-                  <img
-                    src={DiscordPhoto}
-                    style={{
-                      height: "2rem",
-                      width: "10.545rem",
-                    }}
-                  ></img>
+                <div className="col">
+                  <div style={{ height: "4rem" }}>
+                    <div style={{ height: "1rem" }}></div>
+                    <img
+                      src={DiscordPhoto}
+                      className=""
+                      style={{
+                        height: "2rem",
+                        width: "10.545rem",
+                        verticalAlign: "sub",
+                      }}
+                    ></img>
+                  </div>
+                  <div style={{ height: "1rem" }}></div>
+                  <div>regalturtle</div>
+                  <div style={{ height: "1rem" }}></div>
                 </div>
-
-                <div className="col my-auto">
+                <div className="col">
                   <img
                     src={GmailPhoto}
                     style={{
@@ -125,9 +136,11 @@ function Home() {
                       width: "5.375rem",
                     }}
                   ></img>
+                  <div style={{ height: "1rem" }}></div>
+                  <div>thysvanderschoot@gmail.com</div>
+                  <div style={{ height: "1rem" }}></div>
                 </div>
-
-                <div className="col my-auto">
+                <div className="col">
                   <a href="https://www.linkedin.com/in/thys-vanderschoot-900559220">
                     <img
                       src={LinkedInPhoto}
@@ -137,9 +150,15 @@ function Home() {
                       }}
                     ></img>
                   </a>
+                  <div style={{ height: "1rem" }}></div>
+                  <div>Thys Vanderschoot</div>
+                  <div style={{ height: "1rem" }}></div>
+                  <div>
+                    https://www.linkedin.com/in/thys-vanderschoot-900559220
+                  </div>
+                  <div style={{ height: "1rem" }}></div>
                 </div>
-
-                <div className="col my-auto">
+                <div className="col">
                   <img
                     src={PhonePhoto}
                     style={{
@@ -147,31 +166,10 @@ function Home() {
                       width: "4rem",
                     }}
                   ></img>
+                  <div style={{ height: "1rem" }}></div>
+                  <div>(773)540-9546</div>
+                  <div style={{ height: "1rem" }}></div>
                 </div>
-              </div>
-
-              <div className="row" style={{ height: "0.5rem" }}></div>
-
-              <div className="row">
-                <div className="col my-auto">RegalTurtle24</div>
-                <div className="col my-auto">regalturtle</div>
-                <div className="col my-auto">thysvanderschoot@gmail.com</div>
-                <div className="col my-auto">Thys Vanderschoot</div>
-                <div className="col my-auto">(773)540-9546</div>
-              </div>
-
-              <div className="row" style={{ height: "1rem" }}></div>
-
-              <div className="row">
-                <div className="col my-auto">
-                  https://github.com/RegalTurtle24
-                </div>
-                <div className="col my-auto"></div>
-                <div className="col my-auto"></div>
-                <div className="col my-auto">
-                  https://www.linkedin.com/in/thys-vanderschoot-900559220
-                </div>
-                <div className="col my-auto"></div>
               </div>
             </div>
           </div>
