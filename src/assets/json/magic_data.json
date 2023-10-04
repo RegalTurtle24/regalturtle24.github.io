@@ -1,0 +1,30 @@
+{
+  "games": [
+    {
+      "date": "9/15/2023",
+      "format": ["EDH"],
+      "winner": ["Chris", "Brightpalm"],
+      "players": [
+        ["Chris", "Brightpalm"],
+        ["Thys", "Athreos Shadowborn"]
+      ]
+    },
+    {
+      "date": "9/15/2023",
+      "format": ["EDH"],
+      "winner": ["Chris", "Brightpalm"],
+      "players": [
+        ["Chris", "Brightpalm"],
+        ["Thys", "Athreos Shadowborn"],
+        ["GS", "Torbran"]
+      ]
+    }
+  ],
+  "decks": [
+    {
+      "name": "Brightpalm",
+      "format": "EDH",
+      "owner": "Chris"
+    }
+  ]
+}
