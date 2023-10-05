@@ -3,12 +3,15 @@ import gamesCSV from "../assets/json/magic_data.json";
 class GameManager {
   games: MyGame[];
   decks: MyDeck[];
+  CSV = gamesCSV;
 
   constructor() {
     this.games = [];
     this.decks = [];
-    gamesCSV["decks"].forEach(this.makeDecks);
-    gamesCSV["games"].forEach(this.makeGames);
+    // gamesCSV["decks"].forEach(this.makeDecks);
+    // gamesCSV["games"].forEach(this.makeGames);
+    gamesCSV["decks"].map(function (deck) {}, this);
+    // console.log(gamesCSV["decks"][0]);
   }
 
   makeDecks(deck: MyDeckJson) {

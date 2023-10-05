@@ -5,6 +5,11 @@ import GameManager from "../classes/GameManager";
 
 function MagicStats() {
   let MyData = new GameManager();
+  // console.log(MyData.str);
+  MyData.CSV["decks"].forEach(function (item) {
+    // console.log("Hello World");
+    // console.log(item);
+  });
 
   return (
     <PageWithNavBar>
