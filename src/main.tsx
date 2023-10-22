@@ -34,7 +34,7 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/mtg-stats",
+    path: "mtg-stats",
     element: (
       <MagicStats
         decks_snapshot={decks_snapshot}
