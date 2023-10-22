@@ -485,15 +485,15 @@ function MagicStats({
                       (document.getElementById("calendar") as HTMLInputElement)
                         .value
                     );
-                    // MyData.saveNewGame(
-                    //   currentAddFormat,
-                    //   currentAddName,
-                    //   currentAddDeck,
-                    //   selectWinner,
-                    //   (document.getElementById("calendar") as HTMLInputElement)
-                    //     .value,
-                    //   currentDeckOwner
-                    // );
+                    MyData.saveNewGame(
+                      currentAddFormat,
+                      currentAddName,
+                      currentAddDeck,
+                      selectWinner,
+                      (document.getElementById("calendar") as HTMLInputElement)
+                        .value,
+                      currentDeckOwner
+                    );
                     setCurrentAddName([
                       "Select an player",
                       "Select an player",
