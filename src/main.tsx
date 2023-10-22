@@ -1,7 +1,13 @@
 // import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  HashRouter,
+  createHashRouter,
+} from "react-router-dom";
 import Alert from "./components/Alert";
 import Home from "./pages/Home";
 import MagicStats from "./pages/MagicStats";
@@ -28,7 +34,7 @@ const decks_snapshot = await getDocs(decks_collection);
 const games_collection = collection(db, "games");
 const games_snapshot = await getDocs(games_collection);
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Home />,
