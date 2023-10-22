@@ -33,12 +33,18 @@ function NavBar() {
             </NavDropdown> */}
           </Nav>
           <div className="btn" style={{ background: "rgba(0,0,169,0.3)" }}>
-            <Link
+            {/* <Link
               to="/mtg-stats"
               style={{ textDecoration: "none", color: "rgba(235,235,235,1)" }}
             >
               Magic Stats
-            </Link>
+            </Link> */}
+            <a
+              href="/#/mtg-stats"
+              style={{ textDecoration: "none", color: "rgba(235,235,235,1)" }}
+            >
+              Magic Stats
+            </a>
           </div>
         </Navbar.Collapse>
       </Container>
