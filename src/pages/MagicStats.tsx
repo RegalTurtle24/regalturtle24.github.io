@@ -111,7 +111,7 @@ function MagicStats({
     "Select a deck",
   ]);
   const [currentAddFormat, setCurrentAddFormat] = useState(["Select a format"]);
-  const [currentNumPlayers, setNumPlayers] = useState([[], []]);
+  const [currentNumPlayers, setNumPlayers] = useState([[], [], [], []]);
   const [selectWinner, setSelectWinner] = useState("Select a winner");
 
   const [addDeckName, setAddDeckName] = useState("");
@@ -485,15 +485,42 @@ function MagicStats({
                       (document.getElementById("calendar") as HTMLInputElement)
                         .value
                     );
-                    MyData.saveNewGame(
-                      currentAddFormat,
-                      currentAddName,
-                      currentAddDeck,
-                      selectWinner,
-                      (document.getElementById("calendar") as HTMLInputElement)
-                        .value,
-                      currentDeckOwner
-                    );
+                    // MyData.saveNewGame(
+                    //   currentAddFormat,
+                    //   currentAddName,
+                    //   currentAddDeck,
+                    //   selectWinner,
+                    //   (document.getElementById("calendar") as HTMLInputElement)
+                    //     .value,
+                    //   currentDeckOwner
+                    // );
+                    setCurrentAddName([
+                      "Select an player",
+                      "Select an player",
+                      "Select an player",
+                      "Select an player",
+                      "Select an player",
+                      "Select an player",
+                    ]);
+                    setCurrentDeckOwner([
+                      "Select an owner for the deck",
+                      "Select an owner for the deck",
+                      "Select an owner for the deck",
+                      "Select an owner for the deck",
+                      "Select an owner for the deck",
+                      "Select an owner for the deck",
+                    ]);
+                    setCurrentAddDeck([
+                      "Select a deck",
+                      "Select a deck",
+                      "Select a deck",
+                      "Select a deck",
+                      "Select a deck",
+                      "Select a deck",
+                    ]);
+                    setCurrentAddFormat(["Select a format"]);
+                    setNumPlayers([[], [], [], []]);
+                    setSelectWinner("Select a winner");
                   }}
                 >
                   Enter Game
@@ -515,6 +542,11 @@ function MagicStats({
                   addDeckID,
                   addDeckColor
                 );
+                setAddDeckName("");
+                setAddDeckOwner("");
+                setAddDeckFormat("");
+                setAddDeckID("");
+                setAddDeckColor("");
               }}
             >
               <Row>
@@ -560,9 +592,9 @@ function MagicStats({
               </Row>
               <Row>
                 <Form.Group className="mb-3" controlId="deck_color">
-                  <Form.Label>Color</Form.Label>
+                  <Form.Label>Color (Optional)</Form.Label>
                   <Form.Control
-                    placeholder="linear-gradient(90deg, rgba(.., .., .., 0.9), rgba(.., .., .., 0.9), etc)"
+                    placeholder="linear-gradient(90deg, rgba(..., ..., ..., 0.9), rgba(..., ..., ..., 0.9), etc)"
                     onChange={(e) => setAddDeckColor(e.target.value)}
                   />
                 </Form.Group>

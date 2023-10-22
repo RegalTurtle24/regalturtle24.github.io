@@ -3,18 +3,6 @@
     {
       "date": "9/15/2023",
       "format": ["EDH"],
-      "winner": ["Chris", "chrisbrightpalm"],
-      "players": ["Chris|chrisbrightpalm", "Thys|thysathreos"]
-    },
-    {
-      "date": "9/15/2023",
-      "format": ["EDH"],
-      "winner": ["Chris", "chrisbrightpalm"],
-      "players": ["Chris|chrisbrightpalm", "Thys|thysathreos", "GS|gstorbran"]
-    },
-    {
-      "date": "9/15/2023",
-      "format": ["EDH"],
       "winner": ["GS", "gstorbran"],
       "players": ["Thys|thysgiada", "GS|gstorbran", "Chris|chriszhulodok"]
     },
