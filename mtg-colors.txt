@@ -1,0 +1,39 @@
+C: "linear-gradient(90deg, rgba(130, 130, 130, 0.9), rgba(189, 189, 189, 0.9), rgba(130, 130, 130, 0.9))"
+
+W: "rgba(245, 237, 196, 0.9)"
+U: "rgba(66, 142, 255, 0.9)"
+B: "rgba(102, 46, 171, 0.9)"
+R: "rgba(150, 33, 33, 0.9)"
+G: "rgba(26, 171, 30, 0.9)"
+
+WU
+UB
+BR: "linear-gradient(90deg, rgba(102, 46, 171, 0.9), rgba(150, 33, 33, 0.9))"
+RG: 
+GW: "linear-gradient(90deg, rgba(26, 171, 30, 0.9), rgba(245, 237, 196, 0.9))"
+
+WB: "linear-gradient(90deg, rgba(245, 237, 196, 0.9), rgba(102, 46, 171, 0.9))"
+UR: "linear-gradient(90deg, rgba(66, 142, 255, 0.9), rgba(150, 33, 33, 0.9))"
+BG: "linear-gradient(90deg, rgba(102, 46, 171, 0.9), rgba(26, 171, 30, 0.9))"
+RW: 
+GU: "linear-gradient(90deg, rgba(26, 171, 30, 0.9), rgba(66, 142, 255, 0.9))"
+
+WUB
+UBR: "linear-gradient(90deg, rgba(66, 142, 255, 0.9), rgba(102, 46, 171, 0.9), rgba(150, 33, 33, 0.9))"
+BRG
+RGW: "linear-gradient(90deg, rgba(150, 33, 33, 0.9), rgba(26, 171, 30, 0.9), rgba(245, 237, 196, 0.9))"
+GWB
+
+WBG
+URW: "linear-gradient(90deg, rgba(66, 142, 255, 0.9), rgba(150, 33, 33, 0.9), rgba(245, 237, 196, 0.9))"
+BGU: "linear-gradient(90deg, rgba(102, 46, 171, 0.9), rgba(26, 171, 30, 0.9), rgba(66, 142, 255, 0.9))"
+RWB: "linear-gradient(90deg, rgba(150, 33, 33, 0.9), rgba(245, 237, 196, 0.9), rgba(102, 46, 171, 0.9))"
+GUR: "linear-gradient(90deg, rgba(26, 171, 30, 0.9), rgba(66, 142, 255, 0.9), rgba(150, 33, 33, 0.9))"
+
+WUBR
+UBRG
+BRGW
+RGWU
+GWUB: "linear-gradient(90deg, rgba(26, 171, 30, 0.9), rgba(245, 237, 196, 0.9), rgba(66, 142, 255, 0.9), rgba(102, 46, 171, 0.9))"
+
+WUBRG: "linear-gradient(90deg, rgba(245, 237, 196, 0.9), rgba(66, 142, 255, 0.9), rgba(102, 46, 171, 0.9), rgba(150, 33, 33, 0.9), rgba(26, 171, 30, 0.9))"
