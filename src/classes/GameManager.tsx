@@ -162,9 +162,13 @@ class GameManager {
         }
       });
 
-      this.formats.push("cEDH");
-      this.formats.push("Color Wheel");
-      this.formats.push("Eternities Map");
+      let newFormats: string[] = ["cEDH", "Color Wheel", "Eternities Map"];
+
+      newFormats.forEach((format) => {
+        if (!this.formats.includes(format)) {
+          this.formats.push(format);
+        }
+      });
     });
   }
 
