@@ -311,7 +311,6 @@ function MagicStats({
                             currentAddFormat.concat([format])
                           );
                         }
-                        console.log(currentAddFormat);
                       }}
                     >
                       {format}
