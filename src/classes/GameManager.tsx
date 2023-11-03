@@ -162,7 +162,9 @@ class GameManager {
         }
       });
 
-      this.formats = ["Draft", "EDH", "Color Wheel", "Planechase"];
+      this.formats.push("cEDH");
+      this.formats.push("Color Wheel");
+      this.formats.push("Eternities Map");
     });
   }
 
