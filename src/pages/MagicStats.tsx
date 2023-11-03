@@ -2,6 +2,7 @@ import React, { BaseSyntheticEvent, useState } from "react";
 import PageWithNavBar from "../components/PageWithNavBar";
 import Alert from "../components/Alert";
 import GameManager from "../classes/GameManager";
+import AlertDismissible from "../components/AlertDismissible";
 import {
   Form,
   Button,
@@ -19,12 +20,18 @@ import {
   SnapshotMetadata,
   getDocs,
 } from "firebase/firestore";
+import {
+  getAuth,
+  signInWithEmailAndPassword,
+  UserCredential,
+} from "firebase/auth";
 
 enum Choice {
   none,
   showDecks,
   addGame,
   addDeck,
+  signIn,
 }
 
 interface Props {
@@ -120,6 +127,12 @@ function MagicStats({
   const [addDeckID, setAddDeckID] = useState("");
   const [addDeckColor, setAddDeckColor] = useState("");
 
+  // Login Variables
+  const [signInUser, setSignInUser] = useState("");
+  const [signInPass, setSignInPass] = useState("");
+  const auth = getAuth();
+  const [user, setUser] = useState<UserCredential | null>(null);
+
   // if (decksSnapshot == undefined || gamesSnapshot == undefined) {
   //   return <div>Loading!</div>;
   // }
@@ -179,6 +192,13 @@ function MagicStats({
             onClick={() => setCurrentChoice(Choice.addDeck)}
           >
             Add Deck
+          </Button>
+          <a> </a>
+          <Button
+            variant="secondary"
+            onClick={() => setCurrentChoice(Choice.signIn)}
+          >
+            Sign In
           </Button>
         </Container>
         {currentChoice == Choice.showDecks && (
@@ -595,6 +615,52 @@ function MagicStats({
                   <Form.Control
                     placeholder="linear-gradient(90deg, rgba(..., ..., ..., 0.9), rgba(..., ..., ..., 0.9), etc)"
                     onChange={(e) => setAddDeckColor(e.target.value)}
+                  />
+                </Form.Group>
+              </Row>
+              <Row>
+                <div style={{ textAlign: "center" }}>
+                  <Button type="submit">Submit</Button>
+                </div>
+              </Row>
+            </Form>
+          </Container>
+        )}
+        {currentChoice == Choice.signIn && (
+          <Container
+            style={{ padding: "0.3rem", alignItems: "center", width: "50%" }}
+          >
+            <Form
+              id="signInForm"
+              onSubmit={(e) => {
+                e.preventDefault();
+
+                signInWithEmailAndPassword(auth, signInUser, signInPass).then(
+                  (cred) => {
+                    setUser(cred);
+                    setCurrentChoice(Choice.showDecks);
+                    console.log(cred);
+                  }
+                );
+              }}
+            >
+              <Row>
+                <Col>
+                  <Form.Group className="mb-3" controlId="deck_owner">
+                    <Form.Label>Username</Form.Label>
+                    <Form.Control
+                      placeholder="username"
+                      onChange={(e) => setSignInUser(e.target.value)}
+                    />
+                  </Form.Group>
+                </Col>
+              </Row>
+              <Row>
+                <Form.Group className="mb-3" controlId="deck_color">
+                  <Form.Label>Password</Form.Label>
+                  <Form.Control
+                    placeholder="password"
+                    onChange={(e) => setSignInPass(e.target.value)}
                   />
                 </Form.Group>
               </Row>
