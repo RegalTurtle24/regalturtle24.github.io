@@ -1,0 +1,25 @@
+{
+  "games": [
+    {
+      "date": "9/23/2023",
+      "format": ["EDH", "Color Wheel"],
+      "winner": ["Josh", "joshsoundwave", "Cameron", "cameronsivitri"],
+      "players": [
+        "Josh|joshsoundwave",
+        "Thys|thyskadena",
+        "Chris|chrisadeline",
+        "Wess|wessedgar",
+        "Cameron|cameronsivitri"
+      ]
+    }
+  ],
+  "decks": [
+    {
+      "deck_id": "thysgiada",
+      "name": "Angels: They're Just Like Us, but Cooler and with Wings",
+      "format": "EDH",
+      "owner": "Thys",
+      "color": "rgba(245, 237, 196, 0.9)"
+    }
+  ]
+}
