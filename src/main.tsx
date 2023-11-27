@@ -1,19 +1,11 @@
-// import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Route,
-  HashRouter,
-  createHashRouter,
-} from "react-router-dom";
-import Alert from "./components/Alert";
+import { RouterProvider, createHashRouter } from "react-router-dom";
 import Home from "./pages/Home";
 import MagicStats from "./pages/MagicStats";
 
 import { initializeApp } from "firebase/app";
 import { collection, getDocs, getFirestore } from "firebase/firestore";
+import RightToRepair from "./pages/RightToRepair";
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
@@ -49,6 +41,10 @@ const router = createHashRouter([
         games_collection={games_collection}
       />
     ),
+  },
+  {
+    path: "rtr",
+    element: <RightToRepair></RightToRepair>,
   },
 ]);
 
