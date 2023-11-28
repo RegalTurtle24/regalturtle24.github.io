@@ -6,6 +6,12 @@ import MagicStats from "./pages/MagicStats";
 import { initializeApp } from "firebase/app";
 import { collection, getDocs, getFirestore } from "firebase/firestore";
 import RightToRepair from "./pages/RightToRepair";
+import RightToRepairHistory from "./pages/RightToRepair/RightToRepairHistory";
+import RightToRepairToDo from "./pages/RightToRepair/RightToRepairToDo";
+import RightToRepairOtherIndustries from "./pages/RightToRepair/RightToRepairOtherIndustries";
+import RightBlock from "./components/RightToRepair/RightBlock";
+import RightToRepairInternational from "./pages/RightToRepair/RightToRepairInternational";
+import RightToRepairCurrentAction from "./pages/RightToRepair/RightToRepairCurrentAction";
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
@@ -43,8 +49,28 @@ const router = createHashRouter([
     ),
   },
   {
-    path: "rtr",
+    path: "right-to-repair",
     element: <RightToRepair></RightToRepair>,
+  },
+  {
+    path: "right-to-repair/history",
+    element: <RightToRepairHistory></RightToRepairHistory>,
+  },
+  {
+    path: "right-to-repair/what-can-you-do",
+    element: <RightToRepairToDo></RightToRepairToDo>,
+  },
+  {
+    path: "right-to-repair/other-industries",
+    element: <RightToRepairOtherIndustries></RightToRepairOtherIndustries>,
+  },
+  {
+    path: "right-to-repair/international",
+    element: <RightToRepairInternational></RightToRepairInternational>,
+  },
+  {
+    path: "right-to-repair/current-action",
+    element: <RightToRepairCurrentAction></RightToRepairCurrentAction>,
   },
 ]);
 
