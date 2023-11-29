@@ -51,6 +51,7 @@ function Home() {
             className="container-fluid rounded-4"
             style={{
               padding: "1rem",
+              paddingBottom: "0.1rem",
               textAlign: "left",
               width: "90%",
               backgroundColor: "rgba(0, 47, 108, 0.3)",

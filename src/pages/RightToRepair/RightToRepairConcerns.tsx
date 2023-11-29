@@ -2,9 +2,63 @@ import RightToRepairPageWithNavBar from "../../components/RightToRepair/RightToR
 
 const RightToRepairConcerns = () => {
   return (
-    <RightToRepairPageWithNavBar>
-      <div>RightToRepairConcerns</div>
-    </RightToRepairPageWithNavBar>
+    <div
+      style={{
+        backgroundColor: "rgba(170, 170, 170, 1)",
+        height: "100%",
+        minHeight: "100vh",
+      }}
+    >
+      <RightToRepairPageWithNavBar>
+        <div
+          className="container-fluid"
+          style={{
+            paddingTop: "3rem",
+            paddingBottom: "1rem",
+            paddingLeft: "0rem",
+            paddingRight: "0rem",
+          }}
+        >
+          <div
+            className="container-fluid rounded-4"
+            style={{
+              padding: "3rem",
+              textAlign: "center",
+              width: "75%",
+              background:
+                "linear-gradient(315deg, rgba(104, 125, 125, 0.8), rgba(125, 113, 104, 0.8), rgba(104, 125, 125, 0.8))",
+            }}
+          >
+            <h1
+              style={{
+                fontFamily: "Courier New",
+                fontWeight: "bold",
+              }}
+            >
+              Potential Downfalls
+            </h1>
+            <h3 style={{ fontFamily: "Courier New", fontWeight: "bold" }}>
+              Although there certainly are many reasons to adopt right to repair
+              philosophies, there are understandable critiques of the idea that
+              repair should be accessable.
+            </h3>
+          </div>
+
+          <div style={{ padding: "1rem" }} />
+
+          <div
+            className="container-fluid rounded-4"
+            style={{
+              padding: "1rem",
+              paddingBottom: "0.1rem",
+              textAlign: "left",
+              width: "90%",
+              backgroundColor: "rgba(0, 47, 108, 0.3)",
+            }}
+          ></div>
+        </div>
+      </RightToRepairPageWithNavBar>
+    </div>
   );
 };
 

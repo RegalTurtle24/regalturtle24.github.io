@@ -1,4 +1,3 @@
-import PageWithNavBar from "../components/PageWithNavBar";
 import LeftBlock from "../components/RightToRepair/LeftBlock";
 import RightBlock from "../components/RightToRepair/RightBlock";
 import RightToRepairPageWithNavBar from "../components/RightToRepair/RightToRepairPageWithNavBar";
