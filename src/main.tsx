@@ -9,9 +9,10 @@ import RightToRepair from "./pages/RightToRepair";
 import RightToRepairHistory from "./pages/RightToRepair/RightToRepairHistory";
 import RightToRepairToDo from "./pages/RightToRepair/RightToRepairToDo";
 import RightToRepairOtherIndustries from "./pages/RightToRepair/RightToRepairOtherIndustries";
-import RightBlock from "./components/RightToRepair/RightBlock";
 import RightToRepairInternational from "./pages/RightToRepair/RightToRepairInternational";
 import RightToRepairCurrentAction from "./pages/RightToRepair/RightToRepairCurrentAction";
+import RightToRepairConcerns from "./pages/RightToRepair/RightToRepairConcerns";
+import RightToRepairSources from "./pages/RightToRepair/RightToRepairSources";
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
@@ -71,6 +72,14 @@ const router = createHashRouter([
   {
     path: "right-to-repair/current-action",
     element: <RightToRepairCurrentAction></RightToRepairCurrentAction>,
+  },
+  {
+    path: "right-to-repair/concerns",
+    element: <RightToRepairConcerns />,
+  },
+  {
+    path: "right-to-repair/sources",
+    element: <RightToRepairSources />,
   },
 ]);
 

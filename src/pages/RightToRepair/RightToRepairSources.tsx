@@ -1,12 +1,12 @@
 import React from "react";
 import RightToRepairPageWithNavBar from "../../components/RightToRepair/RightToRepairPageWithNavBar";
 
-const RightToRepairOtherIndustries = () => {
+const RightToRepairSources = () => {
   return (
     <RightToRepairPageWithNavBar>
-      <div>RightToRepairOtherIndustries</div>
+      <div>RightToRepairSources</div>
     </RightToRepairPageWithNavBar>
   );
 };
 
-export default RightToRepairOtherIndustries;
+export default RightToRepairSources;
