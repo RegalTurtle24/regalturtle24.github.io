@@ -12,7 +12,12 @@ const RightToRepairNavBar = () => {
       className="rounded-bottom-3"
     >
       <Container fluid>
-        <Navbar.Brand href="/#/right-to-repair">Thys Vanderschoot</Navbar.Brand>
+        <Navbar.Brand
+          href="/#/right-to-repair"
+          style={{ fontFamily: "Courier New", fontWeight: "bold" }}
+        >
+          Thys Vanderschoot
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -31,7 +36,12 @@ const RightToRepairNavBar = () => {
           <div className="btn" style={{ background: "rgba(209, 129, 25, 1)" }}>
             <a
               href="/#/right-to-repair/current-action"
-              style={{ textDecoration: "none", color: "rgba(50,50,50,1)" }}
+              style={{
+                textDecoration: "none",
+                color: "rgba(50,50,50,1)",
+                fontFamily: "Courier New",
+                fontWeight: "bold",
+              }}
             >
               Current Action
             </a>
@@ -42,7 +52,12 @@ const RightToRepairNavBar = () => {
           <div className="btn" style={{ background: "rgba(209, 129, 25, 1)" }}>
             <a
               href="/#/right-to-repair/history"
-              style={{ textDecoration: "none", color: "rgba(50,50,50,1)" }}
+              style={{
+                textDecoration: "none",
+                color: "rgba(50,50,50,1)",
+                fontFamily: "Courier New",
+                fontWeight: "bold",
+              }}
             >
               History
             </a>
@@ -53,7 +68,12 @@ const RightToRepairNavBar = () => {
           <div className="btn" style={{ background: "rgba(209, 129, 25, 1)" }}>
             <a
               href="/#/right-to-repair/international"
-              style={{ textDecoration: "none", color: "rgba(50,50,50,1)" }}
+              style={{
+                textDecoration: "none",
+                color: "rgba(50,50,50,1)",
+                fontFamily: "Courier New",
+                fontWeight: "bold",
+              }}
             >
               International Action
             </a>
@@ -64,7 +84,12 @@ const RightToRepairNavBar = () => {
           <div className="btn" style={{ background: "rgba(209, 129, 25, 1)" }}>
             <a
               href="/#/right-to-repair/other-industries"
-              style={{ textDecoration: "none", color: "rgba(50,50,50,1)" }}
+              style={{
+                textDecoration: "none",
+                color: "rgba(50,50,50,1)",
+                fontFamily: "Courier New",
+                fontWeight: "bold",
+              }}
             >
               Other Industries
             </a>
@@ -75,7 +100,12 @@ const RightToRepairNavBar = () => {
           <div className="btn" style={{ background: "rgba(209, 129, 25, 1)" }}>
             <a
               href="/#/right-to-repair/what-can-you-do"
-              style={{ textDecoration: "none", color: "rgba(50,50,50,1)" }}
+              style={{
+                textDecoration: "none",
+                color: "rgba(50,50,50,1)",
+                fontFamily: "Courier New",
+                fontWeight: "bold",
+              }}
             >
               What to do
             </a>
@@ -86,7 +116,12 @@ const RightToRepairNavBar = () => {
           <div className="btn" style={{ background: "rgba(209, 129, 25, 1)" }}>
             <a
               href="/#/right-to-repair/concerns"
-              style={{ textDecoration: "none", color: "rgba(50,50,50,1)" }}
+              style={{
+                textDecoration: "none",
+                color: "rgba(50,50,50,1)",
+                fontFamily: "Courier New",
+                fontWeight: "bold",
+              }}
             >
               Concerns
             </a>

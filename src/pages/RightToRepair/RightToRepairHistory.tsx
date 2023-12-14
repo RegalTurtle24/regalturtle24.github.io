@@ -56,6 +56,22 @@ const RightToRepairHistory = () => {
             }}
           >
             <p style={{ paddingLeft: "1rem", fontSize: "1.1rem" }}>
+              The philosophy of the companies can be traced back to the idea of
+              planned obsolescence, in which products are made not with the
+              ideal of lasting a long time, but instead that people will
+              purchase new things as time goes on, and that therefore the
+              product does not have to last as long, or that the product should
+              stop working after a certain amount of time. This is the
+              foundational concept for denying the right to repair, as it turns
+              out that planned obsolescence makes the companies who use it quite
+              a lot of money. Because of the profits, tech companies continue to
+              try different strategies to make sure that when your phone breaks,
+              the best option is to go to them to either get it fixed, or throw
+              it out and get the next big thing (which often times isn't
+              actually that different than what you had).
+            </p>
+
+            <p style={{ paddingLeft: "1rem", fontSize: "1.1rem" }}>
               In 2021, Apple announced the iPhone 13. With this new release,
               they also continued on their path to ensure that no third party
               vendor would be able to repair an Apple phone. With the iPhone 13,
