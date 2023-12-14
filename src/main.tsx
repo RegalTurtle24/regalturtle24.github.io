@@ -1,19 +1,18 @@
-// import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Route,
-  HashRouter,
-  createHashRouter,
-} from "react-router-dom";
-import Alert from "./components/Alert";
+import { RouterProvider, createHashRouter } from "react-router-dom";
 import Home from "./pages/Home";
 import MagicStats from "./pages/MagicStats";
 
 import { initializeApp } from "firebase/app";
 import { collection, getDocs, getFirestore } from "firebase/firestore";
+import RightToRepair from "./pages/RightToRepair";
+import RightToRepairHistory from "./pages/RightToRepair/RightToRepairHistory";
+import RightToRepairToDo from "./pages/RightToRepair/RightToRepairToDo";
+import RightToRepairOtherIndustries from "./pages/RightToRepair/RightToRepairOtherIndustries";
+import RightToRepairInternational from "./pages/RightToRepair/RightToRepairInternational";
+import RightToRepairCurrentAction from "./pages/RightToRepair/RightToRepairCurrentAction";
+import RightToRepairConcerns from "./pages/RightToRepair/RightToRepairConcerns";
+import RightToRepairSources from "./pages/RightToRepair/RightToRepairSources";
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
@@ -49,6 +48,38 @@ const router = createHashRouter([
         games_collection={games_collection}
       />
     ),
+  },
+  {
+    path: "right-to-repair",
+    element: <RightToRepair></RightToRepair>,
+  },
+  {
+    path: "right-to-repair/history",
+    element: <RightToRepairHistory></RightToRepairHistory>,
+  },
+  {
+    path: "right-to-repair/what-can-you-do",
+    element: <RightToRepairToDo></RightToRepairToDo>,
+  },
+  {
+    path: "right-to-repair/other-industries",
+    element: <RightToRepairOtherIndustries></RightToRepairOtherIndustries>,
+  },
+  {
+    path: "right-to-repair/international",
+    element: <RightToRepairInternational></RightToRepairInternational>,
+  },
+  {
+    path: "right-to-repair/current-action",
+    element: <RightToRepairCurrentAction></RightToRepairCurrentAction>,
+  },
+  {
+    path: "right-to-repair/concerns",
+    element: <RightToRepairConcerns />,
+  },
+  {
+    path: "right-to-repair/sources",
+    element: <RightToRepairSources />,
   },
 ]);
 
