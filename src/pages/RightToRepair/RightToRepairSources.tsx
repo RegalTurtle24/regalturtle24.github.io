@@ -228,6 +228,17 @@ const RightToRepairSources = () => {
               Components used for pages
             </Link>
           </p>
+
+          <p style={{ paddingLeft: "1rem", fontSize: "1.1rem" }}>
+            <Link
+              to={
+                "https://github.com/RegalTurtle24/regalturtle24.github.io/pull/18"
+              }
+              style={{ color: "rgb(0,0,0)" }}
+            >
+              Pull request with all changes
+            </Link>
+          </p>
         </div>
       </RightToRepairPageWithNavBar>
     </div>
